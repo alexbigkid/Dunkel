@@ -57,7 +57,7 @@ jobs:
                 GIT_FILES: .git*
                 OSX_ATTRIB_FILE: .DS_Store
                 EXCLUDE_DB_MIGRATION: dbMigration*
-                SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+                SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
                 REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
                 REMOTE_USER: ${{ secrets.REMOTE_USER }}
                 REMOTE_PORT: '17177'
