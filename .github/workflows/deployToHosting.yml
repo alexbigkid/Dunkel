@@ -54,13 +54,14 @@ jobs:
               uses: easingthemes/ssh-deploy@master
               env:
                 REMOTE_RSYNC: ./bin/rsync
-                GIT_FILES: .git*
-                OSX_ATTRIB_FILE: .DS_Store
-                EXCLUDE_DB_MIGRATION: dbMigration*
+                # GIT_FILES: .git*
+                # OSX_ATTRIB_FILE: .DS_Store
+                # EXCLUDE_DB_MIGRATION: dbMigration*
                 SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
                 REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
                 REMOTE_USER: ${{ secrets.REMOTE_USER }}
                 REMOTE_PORT: '17177'
-                ARGS: "-avz --delete --rsync-path=$REMOTE_RSYNC --exclude={$GIT_FILES,$OSX_ATTRIB_FILE,$EXCLUDE_DB_MIGRATION}"
+                # ARGS: "-avz --delete --rsync-path=$REMOTE_RSYNC --exclude={$GIT_FILES,$OSX_ATTRIB_FILE,$EXCLUDE_DB_MIGRATION}"
+                ARGS: "-avz --delete --rsync-path=$REMOTE_RSYNC --exclude={'.git*','dbMigration*'}"
                 SOURCE: "./"
                 TARGET: ${{ secrets.REMOTE_TARGET }}/$ABK_SUB_DOMAIN.$ABK_DOMAIN/
