@@ -62,6 +62,5 @@ jobs:
                 REMOTE_USER: ${{ secrets.REMOTE_USER }}
                 REMOTE_PORT: '17177'
                 ARGS: "-avz --delete --rsync-path=$REMOTE_RSYNC --exclude={$GIT_FILES,$OSX_ATTRIB_FILE,$EXCLUDE_DB_MIGRATION}"
-                # ARGS: "-rltgoDzvO --delete"
                 SOURCE: "./"
                 TARGET: ${{ secrets.REMOTE_TARGET }}/$ABK_SUB_DOMAIN.$ABK_DOMAIN/
