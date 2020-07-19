@@ -178,8 +178,10 @@ div.construct { background-image:url(../images/construct.gif); padding:200px; ba
 .p-10 #pdl1 li#p-10 { background-image:url(../images/001_p1_weddings_c.png);    width:100px; height:0; float:left; padding-top:40px; overflow:hidden; position:relative; background-repeat:no-repeat; z-index:999; }
 
 /*#p-dir-h #oneiss.pdl1 { width:832px; height:565px; margin:0 0 0 137px; padding:0px; overflow:hidden; position:relative; background-repeat:no-repeat; z-index:999; }*/
-#p-dir-h #oneiss.pdl1 { width:832px; height:565px; margin:0 0 0 100px; padding:0px; }
-#p-dir-v #oneiss.pdl1 { width:565px; height:832px; margin:0 0 0 100px; padding:0px; }
+/* #p-dir-h #oneiss.pdl1 { width:832px; height:565px; margin:0 0 0 100px; padding:0px; }
+#p-dir-v #oneiss.pdl1 { width:565px; height:832px; margin:0 0 0 100px; padding:0px; } */
+#p-dir-h #oneiss.pdl1 { width:832px; height:632px; margin:0 0 0 100px; padding:0px; }
+#p-dir-v #oneiss.pdl1 { width:632px; height:832px; margin:0 0 0 100px; padding:0px; }
 
 
 table#portfolio              { border:1px groove silver; position:center; margin:auto; width:800px}
